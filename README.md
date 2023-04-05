@@ -1,12 +1,12 @@
 ## Peer-graded Assignment: Getting and Cleaning Data Course Project
 ## R.Assignment getting and cleaning data project week 4
-#************************************************************************************************************************
-Course Project Overview
+
+## Overview
 Johns Hopkins Data Science Specialization Getting and Cleaning Data Coursera Week 4 Class Project
 
 R code for Cleaning and Working with Data
-#************************************************************************************************************************
-##Source Data
+
+## Source 
 
 The data used in this course project represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
@@ -17,9 +17,9 @@ The data for this project can be downloaded here:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-#************************************************************************************************************************
 
-##The R run_analysis.R code in this repository primarily performs these 5 functions:
+
+## The R run_analysis.R code in this repository primarily performs these 5 functions:
 
 Merges the training and the test sets to create one data set.
 
@@ -31,10 +31,10 @@ Appropriately labels the data set with descriptive variable names
 
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
-#************************************************************************************************************************
+
 ##Detailed Information about the Dataset:
 
-___________________________________________ Human Activity Recognition Using Smartphones Dataset Version 1.0  _________________________________________________
+___________________________________________ Human Activity Recognition Using Smartphones Dataset Version 1.0  
 
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - Non Linear Complex Systems Laboratory DITEN - Università degli Studi di Genova. Via Opera Pia 11A, I-16145, Genoa, Italy. activityrecognition@smartlab.ws www.smartlab.ws
 
@@ -44,7 +44,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 See 'features_info.txt' for more details.
 
-#******************************************************************************************************************************
+
 
 For each record it is provided:
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -69,7 +69,6 @@ For each record it is provided:
 
 'test/y_test.txt': Test labels.
 
-#**********************************************************************************************************************
 The following files are available for the train and test data. Their descriptions are equivalent.
 
 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
@@ -80,14 +79,11 @@ The following files are available for the train and test data. Their description
 
 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
-#*************************************************************************************************************************
 
 Notes:
 Features are normalized and bounded within [-1,1].
 Each feature vector is a row on the text file.
-For more information about this dataset contact: activityrecognition@smartlab.ws
-
-#**********************************************************************************************************************
+F
 License:
 Use of this dataset in publications must be acknowledged by referencing the following publication [1]
 
