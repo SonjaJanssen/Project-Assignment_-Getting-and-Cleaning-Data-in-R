@@ -6,7 +6,7 @@
 #   Codes: @SonjaJS
 #   Date:  4 April 2023
 
-##  Grade: !00 %
+##  Grade: 100 %
 ##  Graded peers assignment: by 4 peers review
 ##  Script: All Codes are tested, assignment completed: codes all ok!
 ##  This script was created:
