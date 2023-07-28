@@ -2,8 +2,8 @@
 ##  Week 4_Getting and Cleaning Data Science Course Project
 
 #   Lectures: By Professors PhD Jeffrey Leek, Jeff Leek, PhD Roger D. Peng, PhD Brian Caffo
-#   University: John Hopkins University Bloomberg School of Public Health _ at coursera
-#   Codes: @SonjaJS
+#   University: John Hopkins University Bloomberg School of Public Health 
+#   Codes: @SonjaJanssen-Sahebzad
 #   Date:  4 April 2023
 
 ##  Grade: 100 %
