@@ -2,7 +2,7 @@
 ## R.Assignment getting and cleaning data project week 4
 
 ## Overview
-Johns Hopkins Data Science Specialization Getting and Cleaning Data Coursera Week 4 Class Project
+Johns Hopkins Data Science Specialization Getting and Cleaning Data Course Week 4 Class Project
 
 R code for Cleaning and Working with Data
 
