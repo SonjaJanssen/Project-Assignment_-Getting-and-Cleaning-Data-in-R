@@ -3,7 +3,7 @@
 
 #   Lectures: By Professors PhD Jeffrey Leek, Jeff Leek, PhD Roger D. Peng, PhD Brian Caffo
 #   University: John Hopkins University Bloomberg School of Public Health 
-#   Codes: @SonjaJanssen-Sahebzad
+#   Codes:  By SonjaJanssen-Sahebzad
 #   Date:  4 April 2023
 
 ##  Grade: 100 %
