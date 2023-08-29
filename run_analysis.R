@@ -1,4 +1,3 @@
-
 ##  Getting and Cleaning Data Science Project
 
 #   Lectures: By Professors PhD Jeffrey Leek, Jeff Leek, PhD Roger D. Peng, PhD Brian Caffo
@@ -162,7 +161,7 @@
 #          1.1. Read data from the targeted files into the variables
 # 
 #*******************************************************************************
- 
+
 # 1.1.1. Read the Activity files
   DataActivityTrain <- read.table(file.path(path_file, "train", "Y_train.txt"), header = FALSE)
   DataActivityTest  <- read.table(file.path(path_file, "test" , "Y_test.txt" ), header = FALSE)
@@ -170,15 +169,13 @@
  ## Outcome DataActivityTrain  | 7352 obs. of 1 variable |$ v1: int 5 5 5 5 5 5 5 5 5 5 5 ...
  ## Outcome DataActivityTest   | 2947 obs. of 1 variable |$ v1: int 5 5 5 5 5 5 5 5 5 5 5 ... 
                                                                                 ## Codes tested = ok! 
-
 ## 1.1.2. Read the Subject files
   DataSubjectTrain <- read.table(file.path(path_file, "train", "subject_train.txt"), header = FALSE)
   DataSubjectTest  <- read.table(file.path(path_file, "test" , "subject_test.txt"), header = FALSE)
                                                                                 
   ## Outcome DataSubjectTrain  | 7352 obs. of 1 variable | $ v1: int 2 2 2 2 2 2 2 2 2 2 ...
   ## Outcome DataSubjectTest   | 2947 obs. of 1 variable | $ v1: int 1 1 1 1 1 1 1 1 1 1 ...
-                                                                                ## Codes tested = ok! 
-  
+                                                                                ## Codes tested = ok!  
 # 1.1.3. Read Features files
   DataFeaturesTrain <- read.table(file.path(path_file, "train", "X_train.txt"), header = FALSE)
   DataFeaturesTest  <- read.table(file.path(path_file, "test" , "X_test.txt"), header = FALSE)
@@ -186,8 +183,7 @@
  ## Outcome DataFeaturesTrain  | 7352 obs. of 561 variable | $ v1: int 2 2 2 2 2 2 2 2 2 2 ...
  ## Outcome DataFeaturesTest   | 2947 obs. of 561 variable | $ v1: int 1 1 1 1 1 1 1 1 1 1 ...
                                                                                 ## Codes tested = ok! 
-
-    
+   
 #*******************************************************************************
 #                                  Step 1.2
 #               1.2. Look at the properties of the above variables 
@@ -238,8 +234,7 @@
 #  $ V9  : num  -0.674 -0.946 -0.963 -0.969 -0.977 ...
 #  $ V10 : num  -0.894 -0.894 -0.939 -0.939 -0.939 ...
                                                                                 ## Codes tested = ok! 
-
-                                     
+                                  
 #*******************************************************************************
 #                                  Step 1.3
 #      1.3. Merges the training and the test sets to create one data set
@@ -314,7 +309,6 @@
           #**********************************************************#
           #   All Codes tested for step 1: 1.1, 1.2, 1.3 = all ok!   #  
           #**********************************************************#
-
 #*******************************************************************************  
 #                                  Step 2
 #            2.1. Extracts only the measurements on the mean and 
@@ -327,8 +321,7 @@
   
   SubsetFeaturesDataNames <- FeaturesDataNames$V2[grep("mean\\(\\)|std\\(\\)", FeaturesDataNames$V2)]
   SubsetFeaturesDataNames
-  
-  
+    
 #  SubsetFeaturesDataNames
 #  [1]  "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"           "tBodyAcc-mean()-Z"          
 #  [4]  "tBodyAcc-std()-X"            "tBodyAcc-std()-Y"            "tBodyAcc-std()-Z"           
@@ -355,17 +348,14 @@
                                                                                 ## Codes tested = ok!    
 ###--------------------------------------------------------------------------------------------------###  
 
-# 2.1.2. Subset the dataframe Data by selected names of Features
-  
+# 2.1.2. Subset the dataframe Data by selected names of Features 
   SelectedNames <- c(as.character(SubsetFeaturesDataNames), "subject", "activity")
   CombineAllData <- subset(CombineAllData, select = SelectedNames) 
   View(CombineAllData)                                                                    ## Codes tested = ok! 
 
-# 2.1.3. Check the structures of the dataframe Data
-  
+# 2.1.3. Check the structures of the dataframe Data 
   str(CombineAllData)                                                                     ## Code tested = ok! 
-
-  
+ 
 #  >  str(CombineAllData)   
 #  'data.frame':	10299 obs. of  68 variables:
 #  $ tBodyAcc-mean()-X          : num   0.289   0.278   0.28      0.279    0.277 ...
@@ -441,8 +431,7 @@
         #*************************************************************#
         # All Codes tested for step 2: 2.1.1, 2.1.2, 2.1.3 = all ok!  #  
         #*************************************************************#
- 
-      
+
 #*******************************************************************************  
 #                                  Step 3
 #   3.1 Uses descriptive activity names to name the activities in the data set
@@ -464,23 +453,18 @@
 #  4  4            SITTING
 #  5  5           STANDING
 #  6  6             LAYING
-  
- 
-    
+      
 # 3.1.2. factorize Variable activity in the data frame Data using descriptive activity names
 # 3.1.3. check
   
   head(CombineAllData$activity,30)
   
- ##  [1] 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 4 4                                                                               ## Codes tested = ok!  
-
-  
-                                                                                ## Codes tested = ok! 
+ ##  [1] 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 4 4 4            ## Codes tested = ok!  
+                                                                                
         #*************************************************************#
         # All Codes tested for step 3: 3.1.1, 3.1.2, 3.1.3 = all ok!  #  
         #*************************************************************#
         
-  
 #*******************************************************************************  
 #                                   Step 4
 #    4.1. Appropriately labels the data set with descriptive variable names
@@ -519,8 +503,7 @@
 
   # 4.1.2. Check
   names(CombineAllData)
-  
-  
+    
 #  > names(CombineAllData)
 #  [1] "TimeBodyAccelerometerMean()-X"                 "TimeBodyAccelerometerMean()-Y"                
 #  [3] "TimeBodyAccelerometerMean()-Z"                 "TimeBodyAccelerometerSTD()-X"                 
@@ -557,14 +540,11 @@
 #  [65] "FrequencyBodyGyroscopeJerkMagnitudeMean()"     "FrequencyBodyGyroscopeJerkMagnitudeSTD()"     
 #  [67] "subject"                                       "activity"   
 ###---------------------------------------------------------------------------------------------------###  
-  
                                                                                 ## Codes tested = ok! 
         #*******************************************************#
         #  All Codes tested for step 4: 4.1.1, 4.1.2 = all ok!  #  
         #*******************************************************#
 
-                                                                                
- 
 #*******************************************************************************  
 #                                Step 5
 # 5.1. From the data set in step 4, create a second, independent tidy data set 
@@ -658,15 +638,8 @@
 #  $ FrequencyBodyGyroscopeJerkMagnitudeMean()    : num  -0.319   -0.635    -0.282    -0.99     -0.995 ...
 #  $ FrequencyBodyGyroscopeJerkMagnitudeSTD()     : num  -0.382   -0.694    -0.392    -0.987    -0.995 ...  
  
-  
-
-  
-
-
-  
+# all codes are tested: all ok!  
 #********************************* THE END *************************************
-  
-  
   
 ## You will be required to submit: 
 #    1) a tidy data set, 
@@ -685,21 +658,4 @@
 # This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. 
 # Any commercial use is prohibited. Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
