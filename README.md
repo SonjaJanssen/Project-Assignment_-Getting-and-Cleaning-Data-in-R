@@ -1,8 +1,8 @@
-## Peer-graded Assignment: Getting and Cleaning Data Course Project
-## R.Assignment getting and cleaning data project week 4
+## Project Assignment: Getting and Cleaning Data 
+
 
 ## Overview
-Johns Hopkins Data Science Specialization Getting and Cleaning Data Course Week 4 Class Project
+Johns Hopkins University Data Science Specialization 
 
 R code for Cleaning and Working with Data
 
