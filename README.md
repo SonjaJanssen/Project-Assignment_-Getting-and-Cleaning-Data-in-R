@@ -2,7 +2,7 @@
 
 
 ## Overview
-Johns Hopkins University Data Science Specialization 
+Johns Hopkins University Data Science  
 
 R code for Cleaning and Working with Data
 
