@@ -1,8 +1,8 @@
 ## Project Assignment: Getting and Cleaning Data 
-
+## Codes created by Sonja Janssen-Sahebzad
 
 ## Overview
-Johns Hopkins University Data Science  
+Johns Hopkins University Data Science project
 
 R code for Cleaning and Working with Data
 
